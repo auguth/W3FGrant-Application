@@ -1,7 +1,7 @@
 # Proof of Contract Stake (Pallet) - Tokenless PoS Module
 
 - **Team Name:** Auguth Tech
-- **Payment Address:** addresshere(BTC)
+- **Payment Address:** Fiat (DD.MM.YY, HH:MM)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):**  2
 
 ### Overview
@@ -15,8 +15,6 @@
 #### Team Interest
 
 ### Project Details
-
-#### Research
 
 #### Publicly exposed methods
 
@@ -66,7 +64,6 @@
 
 - https://github.com/Purva-Chaudhari
 - https://github.com/I-Corinthian
-- https://github.com/auguth/pallet_pocs
 
 ### Team LinkedIn Profiles
 
@@ -76,10 +73,9 @@
   
 ## Development Status :open_book:
 
-#### Git Repo 
+#### [PoCS Github Repo](https://github.com/auguth/pallet_pocs)
 
-#### Research Articles & Documentation
-
+#### [Research & Documentation](https://pocs-consensus.xyz)
 
 ## Development Roadmap :nut_and_bolt:
 
@@ -151,14 +147,14 @@
 
 ## Additional Information :heavy_plus_sign:
 
-- **How did you hear about the Grants Program?** 
+**How did you hear about the Grants Program?** 
 
 Through recommendation from [Builders Tribe](https://buidlerstribe.com/) to apply for W3F grants
 
-- **If there are any other teams who have already contributed (financially) to the project.**
+**If there are any other teams who have already contributed (financially) to the project.**
 
 No, Self Funded
 
-- **Previous grants you may have applied for**
+**Previous grants you may have applied for**
 
 No
