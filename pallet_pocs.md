@@ -53,7 +53,7 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 
 - **Contact Name:** Purva Chaudhari
 - **Contact Email:** purva@auguth.com
-- **Website:** https://pocs-consensus.xyz
+- **Website:** [pocs-consensus.xyz](https://pocs-consensus.xyz)
 
 ### Legal Structure
 
