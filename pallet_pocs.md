@@ -46,8 +46,8 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 
 ### Team members
 
-- Name of team leader: Purva Chaudhari
-- Names of team members: Ajay Joshua
+- Team Leader: Purva Chaudhari
+- Team Member : Ajay Joshua
 
 ### Contact
 
@@ -68,15 +68,14 @@ If anyone on your team has applied for a grant at the Web3 Foundation previously
 
 ### Team Code Repos
 
-- https://github.com/<your_organisation>/<project_1>
-- https://github.com/<your_organisation>/<project_2>
+- https://github.com/pocs-consensus/<project_1>
 
-Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
+#### Team Github Profiles
 
 - https://github.com/<team_member_1>
 - https://github.com/<team_member_2>
 
-### Team LinkedIn Profiles (if available)
+### Team LinkedIn Profiles
 
 - https://www.linkedin.com/<person_1>
 - https://www.linkedin.com/<person_2>
