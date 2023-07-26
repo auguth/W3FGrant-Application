@@ -137,7 +137,6 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 
 ...
 
-
 ## Future Plans
 
 Please include here
