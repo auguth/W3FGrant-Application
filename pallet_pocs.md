@@ -1,7 +1,7 @@
 # Proof of Contract Stake (Pallet) - Tokenless PoS Module
 
 - **Team Name:** Auguth Tech
-- **Payment Address:** addresshere(BTC)
+- **Payment Address:** Fiat (DD.MM.YY, HH.MM)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):**  2
 
 ### Overview
