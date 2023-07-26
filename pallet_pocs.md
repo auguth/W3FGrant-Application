@@ -2,7 +2,7 @@
 
 - **Team Name:** Auguth Tech
 - **Payment Address:** (BTC)addresshere
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):**  1
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):**  2
 
 ### Overview
 
