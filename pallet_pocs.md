@@ -57,7 +57,7 @@
 ### Team's experience
 
 - **Purva Chaudhari**:
-- **Naveen Jose**:
+- **Ajay Joshua**:
 - **Joby Reuben**:
 
 ### Team Code Repos
