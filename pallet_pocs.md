@@ -2,7 +2,7 @@
 
 - **Team Name:** Auguth Tech
 - **Payment Address:** (BTC)addresshere
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):**  1
 
 ### Overview
 
@@ -46,19 +46,19 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 
 ### Team members
 
-- Name of team leader
-- Names of team members
+- Name of team leader: Purva Chaudhari
+- Names of team members: Ajay Joshua
 
 ### Contact
 
-- **Contact Name:** Full name of the contact person in your team
-- **Contact Email:** Contact email (e.g. john@duo.com)
-- **Website:** Your website
+- **Contact Name:** Purva Chaudhari
+- **Contact Email:** purva@auguth.com
+- **Website:** https://pocs-consensus.org
 
 ### Legal Structure
 
-- **Registered Address:** Address of your registered legal entity, if available. Please keep it in a single line. (e.g. High Street 1, London LK1 234, UK)
-- **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
+- **Registered Address:** Gandhi Nagar, Oddanchatram, Tamil Nadu, India - 624619
+- **Registered Legal Entity:** Auguth Tech Pvt Ltd (CIN : U72900TZ2019PTC033024)
 
 ### Team's experience
 
