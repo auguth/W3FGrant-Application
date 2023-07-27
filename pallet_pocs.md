@@ -18,9 +18,15 @@
 
 #### Publicly exposed methods
 
+Purva
+
 #### Run Time Storage
 
+Purva
+
 #### Use-Case Diagram
+
+Purva
 
 #### Attacks Mitigation
 
