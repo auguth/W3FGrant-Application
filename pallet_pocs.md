@@ -87,9 +87,9 @@ Purva
 
 ### Overview
 
-- **Total Estimated Duration:** 13 weeks
+- **Total Estimated Duration:** 15 weeks
 - **Full-Time Equivalent (FTE):**  3
-- **Total Costs:** 52,000 USD
+- **Total Costs:** 30,000 USD
 
 ### Milestone 1 - Simple Contract Staking with BABE & Aura Compatibility
 
@@ -108,9 +108,9 @@ Purva
 
 ### Milestone 2 — External Calls Monetization Model
 
-- **Estimated duration:** 5 weeks
+- **Estimated duration:** 6 weeks
 - **FTE:**  3
-- **Costs:** 14,000 USD
+- **Costs:** 12,000 USD
 
 | Number |        Deliverable        |                                                                                                             Specification                                                                                                             |
 |--------|:-------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
