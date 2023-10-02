@@ -1,4 +1,4 @@
-# Proof of Contract Stake (Pallet) - Tokenless PoS Module
+# Proof of Contract Stake (Pallet)
 
 - **Team Name:** Auguth Tech
 - **Payment Address:** Fiat (DD.MM.YY, HH.MM)
@@ -6,14 +6,22 @@
 
 ### Overview
 
-#### One Sentence Summary
+<b> One Sentence Summary </b><br>
+<i>Forging Secure Public Networks through Staking Smart Contracts</i>
 
-#### Brief Description
+<b>Brief Description</b><br>
+Blockchain technology, with the introduction of Ethereum chain, significantly impacted the ecosystem by introducing the concept of smart contracts. These self-executing contracts have significantly enhanced the functionality and versatility of blockchain networks, opening up a wide array of decentralized applications and use cases. However, despite this pivotal development, there has been a notable absence of a consensus mechanism that places smart contracts at its core. Recognizing this critical gap, we present Proof of Contract Stake (PoCS) – The First Developer Centric Concensus. 
 
-#### Substrate Integration
+PoCS is an innovative staking system that leverages contract gas history to select block producers. PoCS marks a significant advancement by seamlessly integrating elements of both proof-of-work and proof-of-stake. We have introduced a novel concept of 'code-mining' that incentivizes developers to actively participate in securing the network. By aligning the interests of developers with the network's security, PoCS introduces a dynamic where smart contract creators play a vital role in consensus. In addition, PoCS implements a robust system of 'stake scoring', taking into account factors such as contract age, reputation, and gas utilization. This design not only fortifies the network against collusion attacks but also ensures a fair and secure environment for all participants. It also addresses a longstanding concern in blockchain consensus models – the 'nothing at stake' attacks . By introducing a non-fungible, non-transferable unit of scarcity for staking, PoCS effectively mitigates this vulnerability, providing a solid foundation for a secure and reliable network. In addition, the stake accumulation attack in PoCS is time constraint and patterned which can be easily detected. This escalates costs over time and cannot be expedited with any external resources.
 
-#### Team Interest
+<b> Substrate Integration</b><br>
+We have chosen Substrate as the foundation for our project's development due to a multitude of compelling reasons. Substrate provides a modular framework for blockchain development platform. By leveraging Substrate's extensive capabilities, we could design our innovative consensus mechanism effectively as it aligns perfectly with our goal of creating a dynamic and adaptable blockchain network. Additionally, our project envisions a future where cross-chain interoperability is a key component. This vision closely resonates with the Polkadot ecosystem, which provides of parachains ecosystem. The parachain ecosystem would help us design a robust implementation and test its interoperability. While this part is still under active research, we foresee our consensus mechanism being well-suited for integration into the broader Polkadot network. Besides, one of the most noteworthy features of Substrate is its native support for WebAssembly (Wasm) built contracts. Considering the research and future extensions, we wanted to develop the consensus on Wasm built contracts. 
 
+
+<b> Team Interest</b><br>
+Our interest in this project was sparked by a genuine enthusiasm for blockchain technology. Initially, we began as web3 developers, participating in hackathons and exploring dapp development. However, during one of these hackathons, we encountered notable limitations with the Ethereum Virtual Machine (EVM). Recognizing the need for a more robust solution, our research head, Joby Reuben, who has been researching blockchain for over 2 years, began to delve into various consensus mechanisms. Proof of Contract Stake (PoCS) stemmed out from his previous research and emerged as a promising avenue, and we've been dedicated to refining this concept for the past eight months.As we conducted our research, we identified the need for a WebAssembly (Wasm) environment to effectively implement this mechanism. This led us to the Polkadot ecosystem, which provided a suitable environment for our vision. 
+
+In this landscape of ever-evolving blockchain technology we are poised to reshape the way we approach smart contracts and network security. Through the support of this grant, we aim to bring our vision to delivering a practical tool to the community and contributing to the ongoing evolution of blockchain technology. The grants will help us validate our research and make it more robust with the para chain ecosystem.
 ### Project Details
 
 #### Publicly exposed methods
