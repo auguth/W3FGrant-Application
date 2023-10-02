@@ -51,14 +51,17 @@ We will continue to research as we implement, not all vulnerabilities might be h
 
 
 ### Ecosystem Fit
+Our project integrates with the Substrate framework, providing a modular and adaptable foundation for our innovative consensus mechanism. This positions us for potential integration into the broader Polkadot ecosystem, aligning with the vision of cross-chain interoperability through parachains.
 
-#### For Polkadot & General
 
-#### Target Audience
+<b> Target Audience </b><br>
+Our primary target audience includes developers within the blockchain space, particularly those focused on Polkadot ecosystem contract and dapp developers. Additionally, our project aims to serve the broader community of blockchain enthusiasts seeking to engage with a dynamic and secure consensus mechanism.
 
-#### Meeting needs
+<b> What need(s) does your project meet? </b><br>
+Our project addresses the critical need for a consensus mechanism that is developer-centric and tailored to the nuances of smart contract interactions. By incentivizing developers through our innovative Proof of Contract Stake (PoCS) model, we empower them to actively participate in securing the network. This not only enhances network security but also fosters a more collaborative and inclusive blockchain ecosystem. Furthermore, our integration with Substrate and potential linkage to the Polkadot network addresses the need for cross-chain interoperability, opening up a realm of possibilities for decentralized applications and services.
 
-#### Similar Projects (How it is different)
+<b> Similar Projects (How it is different) <b><br>
+There are no similar projects in polkadot as well as other blockchains as of now since its proposing a new consensus. 
 
 ## Team :busts_in_silhouette:
 
