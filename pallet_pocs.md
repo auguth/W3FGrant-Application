@@ -21,24 +21,34 @@ We have chosen Substrate as the foundation for our project's development due to 
 <b> Team Interest</b><br>
 Our interest in this project was sparked by a genuine enthusiasm for blockchain technology. Initially, we began as web3 developers, participating in hackathons and exploring dapp development. However, during one of these hackathons, we encountered notable limitations with the Ethereum Virtual Machine (EVM). Recognizing the need for a more robust solution, our research head, Joby Reuben, who has been researching blockchain for over 2 years, began to delve into various consensus mechanisms. Proof of Contract Stake (PoCS) stemmed out from his previous research and emerged as a promising avenue, and we've been dedicated to refining this concept for the past eight months.As we conducted our research, we identified the need for a WebAssembly (Wasm) environment to effectively implement this mechanism. This led us to the Polkadot ecosystem, which provided a suitable environment for our vision. 
 
-In this landscape of ever-evolving blockchain technology we are poised to reshape the way we approach smart contracts and network security. Through the support of this grant, we aim to bring our vision to delivering a practical tool to the community and contributing to the ongoing evolution of blockchain technology. The grants will help us validate our research and make it more robust with the para chain ecosystem.
+In this landscape of ever-evolving blockchain technology we are poised to reshape the way we approach smart contracts and network security. The grants will help us validate our research and make it more robust with the para chain ecosystem. Thus, through this support, we aim to bring our vision to delivering a practical tool to the community and contributing to the ongoing evolution of blockchain technology. 
 ### Project Details
+<b>Prior work - Research </b><br>
+Our PoCS research is documented here <i>INSERT LINK</i>. We have done some simulations to show how PoCS would like if Ethereum used PoCS from genesis block using BigQuery. Check it out here <i>INSERT LINK</i>.
 
-#### Publicly exposed methods
+<b> Substrate implementation Design</b><br>
+To implement PoCS on substrate we will be modifying `pallet-contracts` and  `pallet-staking` under APACHE 2.0 lisence. We decided to proceed with this approach since both of these pallets provide the primary required functionalities. In addition to this substrate also provides a elaborate user interface for integrating contracts which will ease out our implementation. Since we will be implementing it as staking mechanism, we will be using `pallet-staking` with BABE + GRANDPA protocols to modify proof of stake. 
 
-Purva
+<b> Core functionality</b><br>
+Every newly deployed contract will have three extra storage fields: 
+* scarcity (mapping field) - This field will be used to calculate the PoCS stake score. It will be updated anytime a transaction executes which corresponds to that contract. To calculate this we will use 
+    * weight_history (Weight) - Total weight of a transaction executed. 
+    * reputation (u64) - a parameter we assign to calculate the reputation of contract which depends on number of times it is called by a user or any other contract  
+    * recent_blockheight (BlockNumberFor) - This is introduced to prevent vulnerabilities like DDoS attack
+* delegateTo (AccountId) - Set by the deployer and for the consensus to know who is the deployer.  Only deployer can change this field
+* delegateAt (Blocknumber) - The field is the current block height when the delegateTo field is updated
 
-#### Run Time Storage
+<b> Use-Case Diagram </b> <br>
+<i>INSERT LINK</i>
 
-Purva
+<b>What your project is not or will not provide or implement</b><br>
+We have structured our implementation into 3 milestones. In this grant our focus is to develop a first version which would implement pallet-contract to calculate the  staking score in simplistic yet efficient way with above mentioned fields. It would handle 
+* Stake score update when deployer deploys contract 
+* Stake score update when a user calls contract function or other contracts call the contract function
+* Integration with proof of stake in substrate.
 
-#### Use-Case Diagram
+We will continue to research as we implement, not all vulnerabilities might be handled in the very first version with above functionalities. But we will extend it to our future plans or extend the grants after accomplishing the milestones and scope in this proposal.
 
-Purva
-
-#### Attacks Mitigation
-
-#### Limitations
 
 ### Ecosystem Fit
 
