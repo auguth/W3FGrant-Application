@@ -60,7 +60,7 @@ Our primary target audience includes developers within the blockchain space, par
 <b> What need(s) does your project meet? </b><br>
 Our project addresses the critical need for a consensus mechanism that is developer-centric and tailored to the nuances of smart contract interactions. By incentivizing developers through our innovative Proof of Contract Stake (PoCS) model, we empower them to actively participate in securing the network. This not only enhances network security but also fosters a more collaborative and inclusive blockchain ecosystem. Furthermore, our integration with Substrate and potential linkage to the Polkadot network addresses the need for cross-chain interoperability, opening up a realm of possibilities for decentralized applications and services.
 
-<b> Similar Projects (How it is different) <b><br>
+<b> Similar Projects (How it is different) </b><br>
 There are no similar projects in polkadot as well as other blockchains as of now since its proposing a new consensus. 
 
 ## Team :busts_in_silhouette:
@@ -108,64 +108,56 @@ There are no similar projects in polkadot as well as other blockchains as of now
 
 ### Overview
 
-- **Total Estimated Duration:** 15 weeks
+- **Total Estimated Duration:** 16 weeks
 - **Full-Time Equivalent (FTE):**  3
 - **Total Costs:** 30,000 USD
 
-### Milestone 1 - Simple Contract Staking with BABE & Aura Compatibility
+Upfront ask - We have a minimal upfront ask of 2k USD for our resource utilization in research phase. 
 
-- **Estimated duration:** 5 weeks
-- **FTE:**  3
-- **Costs:** 12,000 USD
-
-| Number |        Deliverable        |                                                                                                             Specification                                                                                                             |
-|--------|:-------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-| 0a.    | License                   | Apache 2.0 / GPLv3 / MIT / Unlicense                                                                                                                                                                                                  |
-| 0b.    | Documentation             | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| 0c.    | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                                       |
-| 0d.    | Docker                    | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                                                                         |
-| 0e.    | Article                   | We will publish an article/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.)                                            |
-| 1.     | Substrate module: X       | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone. You can refer to details provided in previous sections.)                                              |
-
-### Milestone 2 — External Calls Monetization Model
-
-- **Estimated duration:** 6 weeks
-- **FTE:**  3
-- **Costs:** 12,000 USD
-
-| Number |        Deliverable        |                                                                                                             Specification                                                                                                             |
-|--------|:-------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-| 0a.    | License                   | Apache 2.0 / GPLv3 / MIT / Unlicense                                                                                                                                                                                                  |
-| 0b.    | Documentation             | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| 0c.    | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                                       |
-| 0d.    | Docker                    | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                                                                         |
-| 0e.    | Article                   | We will publish an article/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.)                                            |
-| 1.     | Substrate module: X       | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone. You can refer to details provided in previous sections.)                                              |
-
-### Milestone 3 — Substrate PoCS Node Template
+### Milestone 1 - Simple Contract Staking with Aura Compatibility
 
 - **Estimated duration:** 4 weeks
 - **FTE:**  3
-- **Costs:** 6,000 USD
+- **Costs:** 6,500 USD
 
 | Number |        Deliverable        |                                                                                                             Specification                                                                                                             |
 |--------|:-------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-| 0a.    | License                   | Apache 2.0 / GPLv3 / MIT / Unlicense                                                                                                                                                                                                  |
+| 0a.    | License                   | Apache 2.0  Unlicense                                                                                                                                                                                                  |
 | 0b.    | Documentation             | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| 0c.    | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                                       |
-| 0d.    | Docker                    | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                                                                         |
-| 0e.    | Article                   | We will publish an article/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.)                                            |
-| 1.     | Substrate module: X       | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone. You can refer to details provided in previous sections.)                                              |
+| 0c.    | Testing | Core functions will be fully covered by primary unit tests to ensure functionality                                |                                                                                                                      |
+| 1.     | Modified Substrate pallet-contract:      | We will create customized version of Substrate `pallet-contracts` that will include the fields required to calculate the staking score. This will be updated whenever a deployer deploys a new contract. showcase the demo on polkadot frontend with new added fields and their values.                                              |
+
+### Milestone 2 — External Calls Monetization Model
+
+- **Estimated duration:** 5 weeks
+- **FTE:**  3
+- **Costs:** 9,500 USD
+
+| Number |        Deliverable        |                                                                                                             Specification                                                                                                             |
+|--------|:-------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| 0a.    | License                   | Apache          |
+| 0b.    | Documentation             | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
+| 0c.    | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality tests.  |
+| 1.     | Cont. Modify Substrate pallet-contract or other relevant pallets    | We will handle external calls in this milestone and implement subsequent updates on scarcity mapping. This method should also be compatible for our next milestone of integrating with staking, so we will be overviewing proof of staking implementation in polkadot |
+
+### Milestone 3 — Integrate with BABE+GRANDPA to add proof of stake
+
+- **Estimated duration:** 7 weeks
+- **FTE:**  3
+- **Costs:** 12,000 USD
+
+| Number |        Deliverable        |                                                                                                             Specification                                                                                                             |
+|--------|:-------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| 0a.    | License                   | Apache   |
+| 0b.    | Documentation             | We will provide both inline documentation of the code and a basic tutorial that explains how a user can use the consensus |
+| 0c.    | Testing and Testing Guide |Unit tests for the consensus to check its robustness  |
+| 0d.    | Launch pallet                    | We will launch our genesis block with the new consensus. This can be sister chain to Polkadot chain |
+| 0e.    | Publish yellow paper                   | We will publish our research as yellow paper  |
+| 1.     | Integrate staking       |   Integrate BABE+GRANDPA to select validators based on our scarcity mapping. Polkadot frontend to show subsequent updates  |
             
 ## Future Plans
 
-**Short Term**
-- Sample 1
-- Sample 2
-
-**Long Term**
-- Sample 1
-- Sample 2
+- Once completed with this grant milestones, we would be working on further research and moving towards testnet launch as a sister chain to Polkadot. Since it is first of its kind we will be actively discussing our future plans and research directions with the community. 
 
 ## Referral Program :moneybag: 
 
