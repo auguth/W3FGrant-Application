@@ -169,8 +169,8 @@ Upfront ask - We have a minimal upfront ask of 2k USD for our resource utilizati
 
 ## Referral Program :moneybag: 
 
-- **Referrer:** [Name](https://github.com/<account>)
-- **Payment Address:** 
+- **Referrer:** muddlebee(Anwesh)
+- **Payment Address:** 0x92c856ef2e7c8c443030e2cc9e1739662ed3e8b1
 
 ## Additional Information :heavy_plus_sign:
 
