@@ -30,6 +30,8 @@ Our PoCS research is documented here <i>INSERT LINK</i>. We have done some simul
 To implement PoCS on substrate we will be modifying `pallet-contracts` and  `pallet-staking` under APACHE 2.0 lisence. We decided to proceed with this approach since both of these pallets provide the primary required functionalities. In addition to this substrate also provides a elaborate user interface for integrating contracts which will ease out our implementation. Since we will be implementing it as staking mechanism, we will be using `pallet-staking` with BABE + GRANDPA protocols to modify proof of stake. 
 
 <b> Core functionality</b><br>
+
+1. Fields to be added to Pallet-contracts <br>
 Every newly deployed contract will have three extra storage fields: 
 * scarcity (mapping field) - This field will be used to calculate the PoCS stake score. It will be updated anytime a transaction executes which corresponds to that contract. To calculate this we will use 
     * weight_history (Weight) - Total weight of a transaction executed. 
@@ -37,6 +39,12 @@ Every newly deployed contract will have three extra storage fields:
     * recent_blockheight (BlockNumberFor) - This is introduced to prevent vulnerabilities like DDoS attack
 * delegateTo (AccountId) - Set by the deployer and for the consensus to know who is the deployer.  Only deployer can change this field
 * delegateAt (Blocknumber) - The field is the current block height when the delegateTo field is updated
+
+2. Staking mechanism: <br>
+In the context of Substrate, the integration of Babe and Grandpa protocols, alongside the Staking Pallet, complements the PoCS mechanism 
+*  Babe's deterministic block production process aligns with PoCS's commitment to security. Validators with higher reputation and weight history, as determined by the scarcity mapping, are incentivized to actively participate in proposing and validating blocks
+* Grandpa Protocol : Just like proof of stake Grandpa, with its finality gadget based on GHOST protocol, adds an extra layer of security. Once blocks are finalized, they become irreversible, providing an additional level of confidence in the integrity of the blockchain. 
+* Staking Pallet (Validator Selection): The Staking Pallet integrates with PoCS as validators selected based on their scarcity scores, are entrusted with the responsibility of proposing and validating blocks. This delegation ensures that validators with a proven track record of actively participating in the network are granted the authority to contribute to the consensus process.
 
 <b> Use-Case Diagram </b> <br>
 <i>INSERT LINK</i>
