@@ -130,7 +130,7 @@ Upfront ask - We have a minimal upfront ask of 2k USD for our resource utilizati
 
 | Number |        Deliverable        |                                                                                                             Specification                                                                                                             |
 |--------|:-------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-| 0a.    | License                   | Apache 2.0  Unlicense                                                                                                                                                                                                  |
+| 0a.    | License                   | Apache 2.0 |
 | 0b.    | Documentation             | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | 0c.    | Testing | Core functions will be fully covered by primary unit tests to ensure functionality                                |                                                                                                                      |
 | 1.     | Modified Substrate pallet-contract:      | We will create customized version of Substrate `pallet-contracts` that will include the fields required to calculate the staking score. This will be updated whenever a deployer deploys a new contract. showcase the demo on polkadot frontend with new added fields and their values.                                              |
@@ -143,7 +143,7 @@ Upfront ask - We have a minimal upfront ask of 2k USD for our resource utilizati
 
 | Number |        Deliverable        |                                                                                                             Specification                                                                                                             |
 |--------|:-------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-| 0a.    | License                   | Apache          |
+| 0a.    | License                   | Apache 2.0     |
 | 0b.    | Documentation             | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
 | 0c.    | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality tests.  |
 | 1.     | Cont. Modify Substrate pallet-contract or other relevant pallets    | We will handle external calls in this milestone and implement subsequent updates on scarcity mapping. This method should also be compatible for our next milestone of integrating with staking, so we will be overviewing proof of staking implementation in polkadot |
@@ -156,7 +156,7 @@ Upfront ask - We have a minimal upfront ask of 2k USD for our resource utilizati
 
 | Number |        Deliverable        |                                                                                                             Specification                                                                                                             |
 |--------|:-------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-| 0a.    | License                   | Apache   |
+| 0a.    | License                   | Apache 2.0  |
 | 0b.    | Documentation             | We will provide both inline documentation of the code and a basic tutorial that explains how a user can use the consensus |
 | 0c.    | Testing and Testing Guide |Unit tests for the consensus to check its robustness  |
 | 0d.    | Launch pallet                    | We will launch our genesis block with the new consensus. This can be sister chain to Polkadot chain |
