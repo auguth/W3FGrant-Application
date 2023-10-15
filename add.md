@@ -32,6 +32,7 @@ On average we are asking for 10k$ per month and the Grant is for 4 months. The G
 - Documentation - Comments ; External Documentation Testing Tutorial
 - Test Cases & Testing Guide pallet_pocs-staking
 - pallet_pocs_staking source code
+- Factorial Contract for Testing
 
 
 ## Milestone 3 : Controller Trustless Reward Contract (4 weeks) (0.34 BTC)
