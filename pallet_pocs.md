@@ -102,9 +102,11 @@ There are no similar projects in polkadot as well as other blockchains as of now
 
 ### Team's experience
 
-- **Purva Chaudhari**:
-- **Ajay Joshua**:
-- **Joby Reuben**:
+- **Purva Chaudhari**: Purva is a Masters Student in Computer Science at University of Pittsburgh. Her coursework is primarily includes on subjects of systems and cryptography. Her thesis is focused in blockchain (decentralised voting system). Prior to it, she has over 2 years of experience in working as a blockchain developer. After completing her bachelers in CS, she worked at Witness Chain for an year as backend blockchain engineer. She has experience in ethereum and solana development. She has also been part of Nethermind and Summer of Bitcoin internships during her bachelors.
+
+- **Ajay Joshua**: Ajay is a B.Tech graduate in Robotics and Automation. He is well-versed in Solidity with three years of practical experience in developing various web3 projects. During his coursework, Ajay has also worked on various projects, in brain-computer interface, AI-based power management system and distributed node-based space communication. His skills span across blockchain development and cybersecurity.
+
+- **Joby Reuben**: Joby is a the research lead. He is a dedicated researcher and has been delving deep in blockchains for over 2 years. He has profound understanding of Layer 1 protocols and is passionate to design Layer 1 consensus protocols. Currently he rewriting Ethereum yellow paper for developers. His elaborate research experience and realization of current shortcomings of blockchain has led to the idea of developing first developer incentivising consensus which we look forward to bring into reality. 
 
 ### Team Code Repos
 
