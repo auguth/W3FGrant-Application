@@ -89,6 +89,7 @@ There are no similar projects in polkadot as well as other blockchains as of now
 - Team Leader: Purva Chaudhari
 - Team Members : Ajay Joshua (Development) , Joby Reuben (Research)
 
+
 ### Contact
 
 - **Contact Name:** Purva Chaudhari
@@ -125,52 +126,62 @@ There are no similar projects in polkadot as well as other blockchains as of now
 
 ### Overview
 
-- **Total Estimated Duration:** 16 weeks
+- **Total Estimated Duration:**  weeks
 - **Full-Time Equivalent (FTE):**  3
 - **Total Costs:** 30,000 USD
 
 Upfront ask - We have a minimal upfront ask of 2k USD for our resource utilization in research phase. 
 
-### Milestone 1 - Simple Contract Staking with Aura Compatibility
+### Milestone 1 - Pallet Contract Update
 
-- **Estimated duration:** 4 weeks
+- **Estimated duration:** 5 weeks
 - **FTE:**  3
 - **Costs:** 6,500 USD
 
 | Number |        Deliverable        |                                                                                                             Specification                                                                                                             |
 |--------|:-------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | 0a.    | License                   | Apache 2.0 |
-| 0b.    | Documentation             | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| 0c.    | Testing | Core functions will be fully covered by primary unit tests to ensure functionality                                |                                                                                                                      |
-| 1.     | Modified Substrate pallet-contract:      | We will create customized version of Substrate `pallet-contracts` that will include the fields required to calculate the staking score. This will be updated whenever a deployer deploys a new contract. showcase the demo on polkadot frontend with new added fields and their values.                                              |
+| 0b.    | Documentation             | We will provide both inline documentation of the code and a basic tutorial to test out the additions |
+| 0c.    | Testing | Unit testing and testing tutorial                               |                                                                                                                   |
+| 1.     | Modified Substrate pallet-contract for PoCS   |  1. Try tight coupling of pallet-contract with pallet-staking for interoperabilty of the pallets for PoCS consensus. <br> 2. Add attributes to PoCS pallet and derive them. (eg: Contract scarcity struct, its related mappings etc )                                         |
 
-### Milestone 2 — External Calls Monetization Model
+### Milestone 2 — Pallet staking Update
 
-- **Estimated duration:** 5 weeks
+- **Estimated duration:** 6 weeks
 - **FTE:**  3
 - **Costs:** 9,500 USD
 
 | Number |        Deliverable        |                                                                                                             Specification                                                                                                             |
 |--------|:-------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | 0a.    | License                   | Apache 2.0     |
-| 0b.    | Documentation             | We will provide both inline documentation of the code and a basic tutorial that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| 0c.    | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality tests.  |
-| 1.     | Cont. Modify Substrate pallet-contract or other relevant pallets    | We will handle external calls in this milestone and implement subsequent updates on scarcity mapping. This method should also be compatible for our next milestone of integrating with staking, so we will be overviewing proof of staking implementation in polkadot |
+| 0b.    | Documentation             | Inline documentation of the code and a basic tutorial |
+| 0c.    | Testing and Testing Guide | Unit testing and testing tutorial|
+| 1.     | Modify pallet staking for PoCS   | Add custom functions and modify some existing functions of pallet staking and pallet contract to implement our attributes and make the pallets interact accordingly  |
 
-### Milestone 3 — Integrate with BABE+GRANDPA to add proof of stake
+### Milestone 3 — Validator Reward Contract
 
-- **Estimated duration:** 7 weeks
+- **Estimated duration:** 4 weeks
 - **FTE:**  3
-- **Costs:** 12,000 USD
+- **Costs:**  USD
 
-| Number |        Deliverable        |                                                                                                             Specification                                                                                                             |
+| Number |        Deliverable        | Specification   |
 |--------|:-------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-| 0a.    | License                   | Apache 2.0  |
-| 0b.    | Documentation             | We will provide both inline documentation of the code and a basic tutorial that explains how a user can use the consensus |
-| 0c.    | Testing and Testing Guide |Unit tests for the consensus to check its robustness  |
-| 0d.    | Launch pallet                    | We will launch our genesis block with the new consensus. This can be sister chain to Polkadot chain |
-| 0e.    | Publish yellow paper                   | We will publish our research as yellow paper  |
-| 1.     | Integrate staking       |   Integrate BABE+GRANDPA to select validators based on our scarcity mapping. Polkadot frontend to show subsequent updates  |
+| 0a.    | License                   | MIT liscence   |
+| 0b.    | Documentation             | Inline documentation of the code and a external contract documentation |
+| 0c.    | Testing and Testing Guide | Unit testing with our ink! contract |
+
+
+### Milestone 4 — Final Tests, Results and Documentation
+
+- **Estimated duration:** 4 weeks
+- **FTE:**  3
+- **Costs:**  USD
+
+| Number| Deliverable |     Specification  |
+|--------|:-------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| 0a.    | Documentation             | End to end tutorial and external documentation for the entire consensus. <br>Standalone yellow paper |
+| 0b.    | Testing and Testing Guide |Alpha testing and analyzation  |
+
             
 ## Future Plans
 
