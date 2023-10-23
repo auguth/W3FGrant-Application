@@ -1,7 +1,7 @@
 # Proof of Contract Stake (Pallet)
 
 - **Team Name:** Auguth Tech
-- **Payment Address:** BTC (btc-address-here)
+- **Payment Address:** BTC (bc1qdajpxy5wc6kcsdaaa4e760977nd03g86khay9g)
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):**  2
 
 ## Project Overview :page_facing_up:
@@ -14,9 +14,9 @@
 
 #### Brief Description
 
-Blockchain technology, with the introduction of Ethereum protocol, impacted the ecosystem by introducing the concept of smart contracts. These self-executing contracts have enhanced the functionality and versatility of blockchain networks, opening up a wide array of decentralized applications and use cases. However, despite this pivotal development, there has been a notable absence of a consensus mechanism that places smart contracts at its core. Recognizing this critical gap, we present Proof of Contract Stake (PoCS) – The First Developer Centric Consensus. 
+Blockchain technology, with the introduction of Ethereum protocol, impacted the ecosystem by introducing the concept of smart contracts. These self-executing contracts have enhanced the functionality and versatility of blockchain networks, opening up a wide array of decentralized applications and use cases. However, despite this pivotal development, there is absence of a consensus mechanism that places smart contracts at its core. Recognizing this critical gap, we present Proof of Contract Stake (PoCS) – The First Developer Centric Consensus. 
 
-PoCS is an innovative staking system that leverages *contract gas history* to select block producers. PoCS marks a significant advancement by seamlessly integrating elements of both proof-of-work and proof-of-stake. We have introduced a novel concept of **'code-mining'** that incentivizes developers to actively participate in securing the network. By aligning the interests of developers with the network's security, PoCS introduces a dynamic where smart contract creators play a vital role in consensus. In addition, PoCS implements a robust system of *'stake scoring'*, taking into account factors such as contract age, reputation, and gas utilization. This design not only fortifies the network against collusion type attacks but also ensures a fair and secure environment for all participants. It also addresses a longstanding concern in blockchain consensus models – the 'nothing at stake' attacks . By introducing a non-fungible, non-transferable unit of scarcity for staking, PoCS effectively mitigates this vulnerability, providing a solid foundation for a secure and reliable network. In addition, the stake accumulation attack in PoCS is time constraint and patterned which can be easily detected. This escalates costs over time and cannot be expedited with any external resources.
+PoCS is an innovative staking system that leverages *contract gas history* to select block producers. PoCS integrates elements of both proof-of-work and proof-of-stake. We have introduced a novel concept of **'code-mining'** that incentivizes developers to actively participate in securing the network. By aligning the interests of developers with the network's security, PoCS introduces a dynamic where smart contract creators play a vital role in consensus. In addition, PoCS implements a system of *'stake scoring'*, taking into account factors such as contract age, reputation, and gas utilization. This design not only fortifies the network against collusion type attacks but also ensures a fair and secure environment for all participants. It also addresses a longstanding concern in blockchain consensus models – the 'nothing at stake' attacks . By introducing a non-fungible, non-transferable unit of scarcity for staking, PoCS effectively mitigates this vulnerability, making it a secure and reliable network. In addition, the stake accumulation attack in PoCS is time constraint and patterned which can be easily detected. This escalates costs over time and cannot be expedited with any external resources.
 
 #### Substrate Integration
 
@@ -39,27 +39,29 @@ Our [PoCS research](https://jobyreuben.in/JOURNALS/pocs) is documented. We have 
 
 To implement PoCS on substrate we will be modifying `pallet-contracts` and  `pallet-staking` under APACHE 2.0 license. We decided to proceed with this approach since both of these pallets provide the primary required functionalities. In addition to this substrate also provides a elaborate user interface for integrating contracts which will ease out our implementation. Since we will be implementing PoCS as a staking mechanism, we will be using `pallet-staking` with BABE + GRANDPA protocols to modify proof of stake. 
 
-#### Core functionality
+#### Outline of Core functionality 
 
 1. **Fields to be added to Pallet-contracts**
 Every newly deployed contract will have three extra storage fields: 
-* `scarcity` (mapping field) - This field will be used to calculate the PoCS stake score. It will be updated anytime a transaction executes which corresponds to that contract. To calculate this we will use 
-    * `weight_history` (Weight) - Total weight of a transaction executed. 
+* `AccountStakeInfo` (struct) : Struct maintainted for each contract call. It is updated everytime a contract is called. 
+    * `owner` (AccountId) - Owner of the contract
+    * `delegateTo` (AccountId) - Set by the deployer and for the consensus to know who is the deployer.  Only deployer can change this field
+    * `delegateAt` (Blocknumber) - The field is the current block height when the delegateTo field is updated
+* `ContractScarcityInfo` (struct field) -  This field will be used to calculate the PoCS stake score. It will be updated anytime a transaction executes which corresponds to that contract. To calculate this we will use 
     * `reputation` (u64) - a parameter we assign to calculate the reputation of contract which depends on number of times it is called by a user or any other contract  
     * `recent_blockheight` (BlockNumberFor) - This is introduced to prevent vulnerabilities like DDoS attack
-* `delegateTo` (AccountId) - Set by the deployer and for the consensus to know who is the deployer.  Only deployer can change this field
-* `delegateAt` (Blocknumber) - The field is the current block height when the delegateTo field is updated
 
 
 2. Staking mechanism: <br>
 In the context of Substrate, the integration of Babe and Grandpa protocols, alongside the Staking Pallet, complements the PoCS mechanism 
 *  Babe's deterministic block production process aligns with PoCS's commitment to security. Validators with higher reputation and weight history, as determined by the scarcity mapping, are incentivized to actively participate in proposing and validating blocks
-* Grandpa Protocol : Just like proof of stake Grandpa, with its finality gadget based on GHOST protocol, adds an extra layer of security. Once blocks are finalized, they become irreversible, providing an additional level of confidence in the integrity of the blockchain. 
 * Staking Pallet (Validator Selection): The Staking Pallet integrates with PoCS as validators selected based on their scarcity scores, are entrusted with the responsibility of proposing and validating blocks. This delegation ensures that validators with a proven track record of actively participating in the network are granted the authority to contribute to the consensus process.
 
 
-<b> Use-Case Diagram </b> <br>
-<i>INSERT LINK</i>
+<b> Protocol design </b> <br>
+<p align="center">
+  <img src="https://jobyreuben.in/assets/pocs/pocs.jpeg">
+</p>
 
 #### What your project is not or will not provide or implement
 We have structured our implementation into 3 milestones. In this grant our focus is to develop a first version which would implement pallet-contract to calculate the  staking score in simplistic yet efficient way with above mentioned fields. It would handle 
@@ -93,7 +95,7 @@ There are no similar projects in polkadot as well as other blockchains as of now
 ### Contact
 
 - **Contact Name:** Purva Chaudhari
-- **Contact Email:** purva@auguth.com
+- **Contact Email:** puc7@pitt.edu
 
 ### Legal Structure
 
@@ -106,7 +108,7 @@ There are no similar projects in polkadot as well as other blockchains as of now
 
 - **Ajay Joshua**: Ajay is a B.Tech graduate in Robotics and Automation. He is well-versed in Solidity with three years of practical experience in developing various web3 projects. During his coursework, Ajay has also worked on various projects, in brain-computer interface, AI-based power management system and distributed node-based space communication. His skills span across blockchain development and cybersecurity.
 
-- **Joby Reuben**: Joby is a the research lead. He is a dedicated researcher and has been delving deep in blockchains for over 2 years. He has profound understanding of Layer 1 protocols and is passionate to design Layer 1 consensus protocols. Currently he rewriting Ethereum yellow paper for developers. His elaborate research experience and realization of current shortcomings of blockchain has led to the idea of developing first developer incentivising consensus which we look forward to bring into reality. 
+- **Joby Reuben**: Joby is a the research lead. He is a dedicated researcher and has been delving deep in blockchains for over 2 years. He has profound understanding of Layer 1 protocols and is passionate to design Layer 1 consensus protocols. Currently he rewriting Ethereum yellow paper for developers as an open contribution. His elaborate research experience and realization of current shortcomings of blockchain has led to the idea of developing first developer incentivising consensus which we look forward to bring into reality.
 
 ### Team Code Repos
 
@@ -120,32 +122,28 @@ There are no similar projects in polkadot as well as other blockchains as of now
 - https://www.linkedin.com/in/ajay-joshua-a8a250176/
 - https://www.linkedin.com/in/jobyreuben
   
-## Development Status :open_book:
-
-#### [PoCS Github Repo](https://github.com/auguth/pallet_pocs)
-
 ## Development Roadmap :nut_and_bolt:
 
 ### Overview
 
 - **Total Estimated Duration:**  weeks
 - **Full-Time Equivalent (FTE):**  3
-- **Total Costs:** 30,000 USD
+- **Total Costs:**  ~ 1 BTC (equivalent to 30,000 USD )
 
-Upfront ask - We have a minimal upfront ask of 2k USD for our resource utilization in research phase. 
+Upfront ask - We have a minimal upfront ask of 1.5k USD for our resource utilization in research phase. 
 
 ### Milestone 1 - Pallet Contract Update
 
-- **Estimated duration:** 5 weeks
+- **Estimated duration:** 4 weeks
 - **FTE:**  3
-- **Costs:** 6,500 USD
+- **Costs:** 7,000 USD
 
 | Number |        Deliverable        |                                                                                                             Specification                                                                                                             |
 |--------|:-------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | 0a.    | License                   | Apache 2.0 |
 | 0b.    | Documentation             | We will provide both inline documentation of the code and a basic tutorial to test out the additions |
 | 0c.    | Testing | Unit testing and testing tutorial                               |                                                                                                                   |
-| 1.     | Modified Substrate pallet-contract for PoCS   |  1. Try tight coupling of pallet-contract with pallet-staking for interoperabilty of the pallets for PoCS consensus. <br> 2. Add attributes to PoCS pallet and derive them. (eg: Contract scarcity struct, its related mappings etc )                                         |
+| 1.     | Modified Substrate pallet-contracts for PoCS   |  1. Try tight coupling of pallet-contracts with pallet-staking for interoperability of the pallets for PoCS consensus. <br> 2. Add attributes to PoCS pallet and derive them. (eg: Contract scarcity struct, its related mappings etc )                                         |
 
 ### Milestone 2 — Pallet staking Update
 
@@ -164,30 +162,32 @@ Upfront ask - We have a minimal upfront ask of 2k USD for our resource utilizati
 
 - **Estimated duration:** 4 weeks
 - **FTE:**  3
-- **Costs:**  USD
+- **Costs:**  7,000 USD
 
 | Number |        Deliverable        | Specification   |
 |--------|:-------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-| 0a.    | License                   | MIT liscence   |
+| 0a.    | License                   | MIT license   |
 | 0b.    | Documentation             | Inline documentation of the code and a external contract documentation |
-| 0c.    | Testing and Testing Guide | Unit testing with our ink! contract |
+| 0c.    | Testing and Testing Guide | Unit testing with our validator reward ink! contract |
 
 
 ### Milestone 4 — Final Tests, Results and Documentation
 
 - **Estimated duration:** 4 weeks
 - **FTE:**  3
-- **Costs:**  USD
+- **Costs:**  5,000 USD
 
 | Number| Deliverable |     Specification  |
 |--------|:-------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | 0a.    | Documentation             | End to end tutorial and external documentation for the entire consensus. <br>Standalone yellow paper |
 | 0b.    | Testing and Testing Guide |Alpha testing and analyzation  |
-
+| 0c. | Article | We will publish an article/workshop that explains inner workings of PoCS and developer guide to build a PoCS enabled Substrate chain
             
 ## Future Plans
 
-- Once completed with this grant milestones, we would be working on further research and moving towards testnet launch as a sister chain to Polkadot. Since it is first of its kind we will be actively discussing our future plans and research directions with the community. 
+Once completed with this grant milestones, 
+- Further research and moving towards testnet launch as a sister chain to Polkadot. Since it is first of its kind we will be actively discussing our future plans and research directions with the community.
+- We will be focussing more on making PoCS pallets interoperable with current popular Substrate pallets.
 
 ## Referral Program :moneybag: 
 
